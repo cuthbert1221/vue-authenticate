@@ -631,7 +631,19 @@ var defaultOptions = {
       scope: ['user:email'],
       scopeDelimiter: ' ',
       oauthType: '2.0',
-      popupOptions: { width: 1020, height: 618 }
+      popupOptions: { width: null, height: null }
+    },
+    
+    discord: {
+      name: 'discord',
+      url: '/auth/discord',
+      authorizationEndpoint: 'https://discord.com/api/oauth2/authorize',
+      redirectUri: getRedirectUri(),
+      optionalUrlParams: ['scope'],
+      scope: ['identify', 'email'],
+      scopeDelimiter: ' ',
+      oauthType: '2.0',
+      popupOptions: { width: null, height: null }
     },
 
     instagram: {
