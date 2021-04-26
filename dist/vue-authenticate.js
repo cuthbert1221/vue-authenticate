@@ -643,7 +643,7 @@ var defaultOptions = {
       scope: ['identify', 'email'],
       scopeDelimiter: ' ',
       oauthType: '2.0',
-      popupOptions: { width: null, height: null }
+      popupOptions: { nodeIntegration: 'no' }
     },
 
     instagram: {
